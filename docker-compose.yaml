@@ -1,0 +1,9 @@
+services:
+  remix_app:
+    build: .
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./app:/webapp     
+    working_dir: /webapp
+    command: sleep infinity
